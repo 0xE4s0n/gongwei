@@ -1,0 +1,20 @@
+server:
+  port: 80
+
+spring:
+  datasource:
+    username: root
+    password: LEI!2661076033
+    url: jdbc:mysql://localhost:3306/gongwei?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: cuit.xsgw.entity
+
+#showSql
+logging:
+  level:
+    cuit:
+      xsgw:
+        mapper : debug
